@@ -1,0 +1,2119 @@
+executor.py [LINE:362] #INFO     [2023-02-07 15:13:28,608] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:13:28,768] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:13:28,768] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:32,949] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:33,938] Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:34,642] Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:35,007] Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:35,988] Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:36,599] Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:37,333] Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:38,228] Task exception was never retrieved
+future: <Task finished name='Task-38' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:13:40,182] Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает', reply_markup=keyboard.start, parse_mode='Markdown')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:14:12,497] Task exception was never retrieved
+future: <Task finished name='Task-53' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:14:13,964] Task exception was never retrieved
+future: <Task finished name='Task-57' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:14:14,939] Task exception was never retrieved
+future: <Task finished name='Task-61' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='бот работает')
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:15:19,938] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:15:19,939] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:15:27,547] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:15:27,778] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:15:27,778] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:15:41,549] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:15:41,549] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:16:18,187] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:16:18,346] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:16:18,347] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:16:36,258] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:16:36,259] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:21:44,805] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:21:44,958] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:21:44,958] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:21:47,537] Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:21:49,262] Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:21:52,265] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:21:53,077] Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:21:59,794] Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:22:01,247] Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:22:12,202] Task exception was never retrieved
+future: <Task finished name='Task-43' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:22:13,123] Task exception was never retrieved
+future: <Task finished name='Task-48' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:22:13,555] Task exception was never retrieved
+future: <Task finished name='Task-52' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:22:13,925] Task exception was never retrieved
+future: <Task finished name='Task-56' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:22:20,505] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:22:20,506] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:22:39,494] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:22:39,746] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:22:39,746] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:22:45,125] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:22:45,126] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:23:07,795] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:23:08,084] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:23:08,085] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:15,574] Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:23,003] Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:23,864] Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:24,213] Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:24,874] Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:25,213] Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:25,804] Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:23:26,164] Task exception was never retrieved
+future: <Task finished name='Task-43' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:23:33,281] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:23:33,282] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:23:41,013] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:23:41,173] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:23:41,173] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:24:12,377] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:24:12,378] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:24:22,030] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:24:22,203] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:24:22,204] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:24:31,445] Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:24:38,143] Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+base_events.py [LINE:1765] #ERROR    [2023-02-07 15:24:56,268] Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 28, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:25:25,673] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:25:25,674] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:25:34,212] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:25:34,486] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:25:34,487] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:33:25,521] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:33:25,522] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:33:34,299] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:33:34,528] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:33:34,529] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:33:54,320] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:33:54,321] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:37:52,263] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:37:52,417] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:37:52,417] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:43:37,716] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:43:37,717] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:43:54,475] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:43:54,727] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:43:54,727] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 15:44:16,377] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 15:44:16,378] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 15:50:47,782] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 15:50:47,955] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 15:50:47,956] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:09:37,618] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:09:37,620] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:09:49,745] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:09:49,951] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:09:49,952] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:10:22,975] Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:10:24,679] Task exception was never retrieved
+future: <Task finished name='Task-36' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:10:25,232] Task exception was never retrieved
+future: <Task finished name='Task-40' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:10:25,742] Task exception was never retrieved
+future: <Task finished name='Task-44' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:10:26,134] Task exception was never retrieved
+future: <Task finished name='Task-48' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:11:08,998] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:11:08,998] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:11:36,277] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:11:36,442] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:11:36,443] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:12:02,915] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:12:02,916] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:12:58,101] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:12:58,300] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:12:58,300] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:13:20,725] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:13:21,662] Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+base_events.py [LINE:1765] #ERROR    [2023-02-07 16:13:22,171] Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageNotModified('Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 33, in join
+    await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 3122, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageNotModified: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:15:41,002] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:15:41,003] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:24:18,620] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:24:18,806] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:24:18,807] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:25:40,190] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:25:40,191] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:25:49,246] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:25:49,475] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:25:49,475] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:26:40,360] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:26:40,361] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:28:07,655] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:28:07,857] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:28:07,858] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:36:30,258] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:36:30,259] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:36:40,434] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:36:40,601] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:36:40,602] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 16:41:06,389] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 16:41:06,390] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 16:41:18,889] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 16:41:19,079] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 16:41:19,080] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:05:00,452] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:05:00,453] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:05:15,979] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:05:16,168] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:05:16,170] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:05:34,759] Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:05:38,990] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:05:40,377] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:06:33,022] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:06:33,023] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:06:43,819] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:06:44,110] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:06:44,110] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:06:56,954] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:06:56,955] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:08:39,267] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:08:39,496] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:08:39,497] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:42,820] Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:48,338] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:49,962] Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:50,629] Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:51,201] Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:54,071] Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+base_events.py [LINE:1765] #ERROR    [2023-02-07 17:08:54,785] Task exception was never retrieved
+future: <Task finished name='Task-36' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('Object of type InlineKeyboardButton is not JSON serializable')>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 27, in welcome
+    await bot.send_message(message.chat.id, text='Выберите категорию в которой хотите получить скидку \u2b07\ufe0f',
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 336, in send_message
+    reply_markup = prepare_arg(reply_markup)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\payload.py", line 56, in prepare_arg
+    return json.dumps(_normalize(value))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\utils\json.py", line 62, in dumps
+    return json.dumps(data, ensure_ascii=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alex\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type InlineKeyboardButton is not JSON serializable
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:09:17,956] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:09:17,957] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:09:52,826] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:09:53,040] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:09:53,040] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:10:25,857] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:10:25,858] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:10:32,337] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:10:32,509] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:10:32,510] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:33:27,982] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:33:27,982] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:38:09,794] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:38:09,961] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:38:09,961] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:41:51,491] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:41:51,492] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:41:59,362] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:41:59,573] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:41:59,573] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:45:15,906] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:45:15,907] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:45:25,642] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:45:25,834] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:45:25,835] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:46:46,096] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:46:46,096] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:46:52,715] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:46:52,891] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:46:52,891] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:48:27,448] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:48:27,449] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:50:26,148] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:50:26,348] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:50:26,349] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 17:51:39,639] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 17:51:39,640] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 17:53:24,810] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 17:53:25,047] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 17:53:25,047] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 18:10:42,733] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 18:10:42,734] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 18:14:53,980] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 18:14:54,137] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 18:14:54,138] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 20:46:10,879] Stop polling...
+dispatcher.py [LINE:390] #ERROR    [2023-02-07 20:46:10,880] Cause exception while getting updates.
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiohttp\client_reqrep.py", line 894, in start
+    with self._timer:
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiohttp\helpers.py", line 720, in __exit__
+    raise asyncio.TimeoutError from None
+TimeoutError
+executor.py [LINE:329] #WARNING  [2023-02-07 20:46:10,939] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 20:49:59,903] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 20:50:00,061] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 20:50:00,061] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 20:56:52,520] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 20:56:52,521] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 20:57:21,429] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 20:57:21,618] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 20:57:21,618] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 21:26:03,372] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 21:26:03,373] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:15:59,225] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:15:59,515] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:15:59,515] Start polling.
+base_events.py [LINE:1765] #ERROR    [2023-02-07 22:16:18,108] Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("object list can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Пайтон\BOt tz\main.py", line 51, in marketplace
+    list_rows = await sheet.get_list_row(call.data[1:])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object list can't be used in 'await' expression
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:16:54,620] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:16:54,621] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:17:47,264] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:17:47,423] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:17:47,424] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:21:26,034] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:21:26,035] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:30:57,944] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:30:58,190] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:30:58,191] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:36:39,613] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:36:39,614] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:39:27,114] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:39:27,344] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:39:27,344] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:43:40,076] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:43:40,077] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:43:48,179] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:43:48,343] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:43:48,343] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:47:41,963] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:47:41,964] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:47:55,031] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:47:55,200] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:47:55,201] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:50:03,289] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:50:03,290] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 22:50:21,479] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 22:50:21,649] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 22:50:21,650] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 22:58:53,127] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 22:58:53,128] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 23:04:32,323] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 23:04:32,483] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 23:04:32,484] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 23:06:11,304] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 23:06:11,305] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 23:07:32,543] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 23:07:32,708] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 23:07:32,709] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 23:13:05,961] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 23:13:05,962] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 23:13:21,237] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 23:13:21,442] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 23:13:21,442] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 23:13:27,818] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 23:13:27,819] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 23:13:39,299] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 23:13:39,464] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 23:13:39,464] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 23:14:44,294] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 23:14:44,295] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-07 23:17:52,268] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-07 23:17:52,416] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-07 23:17:52,417] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-07 23:24:05,172] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-07 23:24:05,173] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 09:47:04,661] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 09:47:04,843] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 09:47:04,843] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 09:48:22,430] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 09:48:22,431] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 09:49:03,161] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 09:49:03,322] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 09:49:03,322] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 09:50:07,032] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 09:50:07,033] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 09:50:16,261] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 09:50:16,421] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 09:50:16,421] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 09:56:46,909] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 09:56:46,910] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 09:56:57,139] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 09:56:57,298] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 09:56:57,299] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 09:57:02,428] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 09:57:02,429] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 09:57:16,658] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 09:57:16,798] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 09:57:16,798] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 09:58:17,716] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 09:58:17,717] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 10:02:23,294] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 10:02:23,500] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 10:02:23,501] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 10:05:22,517] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 10:05:22,518] Goodbye!
+executor.py [LINE:362] #INFO     [2023-02-08 10:11:26,463] Bot: @Alex3005 [@alex3005bot]
+executor.py [LINE:358] #WARNING  [2023-02-08 10:11:26,623] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2023-02-08 10:11:26,623] Start polling.
+dispatcher.py [LINE:433] #INFO     [2023-02-08 10:16:53,160] Stop polling...
+executor.py [LINE:329] #WARNING  [2023-02-08 10:16:53,161] Goodbye!
